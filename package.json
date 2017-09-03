@@ -1,0 +1,25 @@
+{
+  "name": "lambandtiger",
+  "version": "1.0.0",
+  "description": "Lamb And Tiger Game - Aadupuli",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Lamb",
+    "And",
+    "Tiger",
+    "Lamb",
+    "Tiger",
+    "Aadupuli"
+  ],
+  "author": "jayaraj",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-ws": "^3.0.0",
+    "mysql": "^2.14.1"
+  }
+}
