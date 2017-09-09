@@ -18,6 +18,10 @@ UserModel.list = (data) => {
 		get.and(UserModel.fields.id, data.id);
 	}
 
+	if (data && data.name) {
+		get.and(UserModel.fields.name, data.name);
+	}
+
 	return get.execute();
 }
 
