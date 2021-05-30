@@ -1,4 +1,4 @@
-const hostname = '192.168.1.80';
+const hostname = '52.77.225.255';
 const port = 3000;
 
 const app = require('express')();
@@ -111,7 +111,7 @@ app.ws('/message', function(ws, req) {
   })
 });
 
-app.listen(port, hostname, () => {
+app.listen(port, () => {
 	console.log('Server started on port '+ port);
 })
 
