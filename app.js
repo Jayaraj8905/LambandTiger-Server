@@ -164,6 +164,10 @@ function getClientByIds(userId, gameId) {
 // async..await is not allowed in global scope, must use a wrapper
 async function sendMail(from, name, subject, text) {
 
+	// https://stackoverflow.com/questions/26948516/nodemailer-invalid-login
+	// https://myaccount.google.com/lesssecureapps
+	// https://accounts.google.com/DisplayUnlockCaptcha
+	// https://community.nodemailer.com/using-gmail/
 	var transporter = nodemailer.createTransport({
 		service: 'gmail',
 		auth: {
